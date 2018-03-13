@@ -1,0 +1,92 @@
+.contact {
+  .main-container {
+    .container {
+      margin: 0 auto;
+      padding: 10% 0;
+      .preface {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        color: white;
+        p {
+          font-size: .7em;
+          line-height: 2;
+        }
+      }
+      .contact-form {
+        background: #ffffff;
+        padding: 10%;
+        border-radius: 5px;
+        form {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-flow: row wrap;
+                  flex-flow: row wrap;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          input[type="text"], textarea {
+            -webkit-box-flex: 1;
+                -ms-flex: 1 100%;
+                    flex: 1 100%;
+            background: #f8f9fa;
+            border-radius: 5px;
+            padding: 1em;
+            border: 1px solid #E8E9EB;
+            font-size: .6em;
+            margin-bottom: 1em;
+            &::-webkit-input-placeholder {
+              color: #BCBFC4;
+            }
+            &:-ms-input-placeholder {
+              color: #BCBFC4;
+            }
+            &::-ms-input-placeholder {
+              color: #BCBFC4;
+            }
+            &::placeholder {
+              color: #BCBFC4;
+            }
+          }
+          textarea {
+            resize: none;
+          }
+          input[type="submit"] {
+            margin: 1em auto;
+            padding: 1em 1.5em;
+            border-radius: 5px;
+            background-image: -webkit-linear-gradient(315deg, #FD8E69, #FEE453);
+            background-image: -o-linear-gradient(315deg, #FD8E69, #FEE453);
+            background-image: linear-gradient(135deg, #FD8E69, #FEE453);
+            border: none;
+            color: white;
+            font-size: .8em;
+            letter-spacing: .1em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media all and (min-width: 768px) {
+  .contact {
+    .main-container {
+      .container {
+        width: 80%;
+        .contact-form {
+          form {
+            input[type="text"] {
+              -webkit-box-flex: 0;
+                  -ms-flex: 0 49%;
+                      flex: 0 49%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
